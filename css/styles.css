@@ -486,6 +486,7 @@ select {
 
 /* HEADER - HERO */
 .hero {
+    background-color: var(--color-one);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
