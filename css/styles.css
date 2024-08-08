@@ -1239,6 +1239,7 @@ select {
 
     .faqs__texts {
         width: 60%;
+        height: 600px;
     }
 }
 
