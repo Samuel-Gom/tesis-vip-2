@@ -506,6 +506,10 @@ select {
     background-image: linear-gradient(to right, #1c1d32cc, #1c1d32cc), url("../assets/img/hero.webp");
 }
 
+.hero--services {
+    background-image: linear-gradient(to right, #1c1d32cc, #1c1d32cc), url("../assets/img/hero-servicios.png");
+}
+
 .hero__main {
     padding-block: 3rem 5rem;
 }
@@ -536,6 +540,13 @@ select {
     .resalt {
         color: var(--color-three);
     }
+}
+
+.hero__title--services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5ch;
 }
 
 .hero__buttons {
@@ -748,6 +759,7 @@ select {
 }
 
 .benefits__icon {
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1691,5 +1703,93 @@ select {
 
     .info-contact__group {
         justify-content: space-evenly;
+    }
+}
+
+
+/* PAGE SERVICES */
+.page-services {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-block: var(--padding-size);
+}
+
+.page-services__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.page-services__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.service {
+    flex-grow: 1;
+    flex-basis: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 4px #00000040;
+}
+
+.service__title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem 2rem;
+    font-size: 1.8rem;
+}
+
+.service__title .text {
+    flex-basis: 250px;
+}
+
+.service__title .resalt {
+    margin-right: .5ch;
+}
+
+.service__title .number {
+    order: -1;
+    font-size: 3.5rem;
+    line-height: 1;
+    opacity: .25;
+}
+
+.btn--services {
+    padding-inline: 3rem;
+}
+
+@media (width >=450px) {
+    .service__title .number {
+        order: 1;
+    }
+}
+
+@media (width >=600px) {
+    .benefits__group--services {
+        gap: 2rem;
+    }
+
+    .benefits__group--services .benefits__group-number {
+        padding-right: 2rem;
+    }
+}
+
+@media (width >=768px) {
+    .page-services__container {
+        gap: 6rem 3rem;
+    }
+}
+
+@media (width >=1024px) {
+    .page-services__container {
+        gap: 8rem 3rem;
     }
 }
