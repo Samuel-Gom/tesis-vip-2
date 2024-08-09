@@ -555,6 +555,12 @@ select {
     }
 }
 
+@media (width >=1440px) {
+    .hero--home {
+        min-height: auto;
+    }
+}
+
 
 /* SECTION INFO */
 .info {
