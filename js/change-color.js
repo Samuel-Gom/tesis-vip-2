@@ -1,4 +1,4 @@
-// CAMBIAR DE COLOR LOS INPUT SELECT 
+// CAMBIAR DE COLOR LOS INPUT SELECT - USADO LOS FORMULARIOS EN INDEX.HTML Y CONTACTO.HTML
 const carrera = document.getElementById("cmbCarrera");
 
 cambiarColorTexto(carrera);
